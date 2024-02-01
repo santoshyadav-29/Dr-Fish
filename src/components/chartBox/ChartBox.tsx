@@ -7,7 +7,7 @@ type Props = {
   icon: string;
   title: string;
   dataKey: string;
-  number: number | string;
+  signal: number | string;
   percentage: number;
   chartData: object[];
 };
@@ -20,7 +20,7 @@ const ChartBox = (props: Props) => {
           <img src={props.icon} alt="" />
           <span>{props.title}</span>
         </div>
-        <h1>{props.number}</h1>
+        <h1>High/Low</h1>
         <Link to="/" style={{ color: props.color }}>
           View all
         </Link>
@@ -51,7 +51,7 @@ const ChartBox = (props: Props) => {
           >
             {props.percentage}%
           </span>
-          <span className="duration">this month</span>
+          <span className="duration">this week</span>
         </div>
       </div>
     </div>

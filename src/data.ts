@@ -35,81 +35,9 @@ export const menu = [
       },
       {
         id: 3,
-        title: "Orders",
-        url: "/orders",
+        title: "About",
+        url: "/about",
         icon: "order.svg",
-      },
-      {
-        id: 4,
-        title: "Posts",
-        url: "/posts",
-        icon: "post2.svg",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "general",
-    listItems: [
-      {
-        id: 1,
-        title: "Elements",
-        url: "/",
-        icon: "element.svg",
-      },
-      {
-        id: 2,
-        title: "Notes",
-        url: "/",
-        icon: "note.svg",
-      },
-      {
-        id: 3,
-        title: "Forms",
-        url: "/",
-        icon: "form.svg",
-      },
-      {
-        id: 4,
-        title: "Calendar",
-        url: "/",
-        icon: "calendar.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Maintenance",
-    listItems: [
-      {
-        id: 1,
-        title: "Settings",
-        url: "/",
-        icon: "setting.svg",
-      },
-      {
-        id: 2,
-        title: "Backups",
-        url: "/",
-        icon: "backup.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "analytics",
-    listItems: [
-      {
-        id: 1,
-        title: "Charts",
-        url: "/",
-        icon: "chart.svg",
-      },
-      {
-        id: 2,
-        title: "Logs",
-        url: "/",
-        icon: "log.svg",
       },
     ],
   },
@@ -167,29 +95,48 @@ export const topDealUsers = [
   },
 ];
 
-export const chartBoxUser = {
+interface ChartData {
+  name: string;
+  value: number;
+}
+
+interface PhValue {
+  color: string;
+  icon: string;
+  title: string;
+  signal: string;
+  dataKey: string;
+  percentage: number;
+  chartData: ChartData[];
+}
+
+export const phValue: PhValue = {
   color: "#8884d8",
   icon: "/userIcon.svg",
-  title: "Total Users",
-  number: "11.238",
-  dataKey: "users",
-  percentage: 45,
+  title: "pH Value",
+  signal: "7.5",
+  dataKey: "ph-value",
+  percentage: calculatePercentage(),
   chartData: [
-    { name: "Sun", users: 400 },
-    { name: "Mon", users: 600 },
-    { name: "Tue", users: 500 },
-    { name: "Wed", users: 700 },
-    { name: "Thu", users: 400 },
-    { name: "Fri", users: 500 },
-    { name: "Sat", users: 450 },
+    { name: "Sun", value: 7 },
+    { name: "Mon", value: 7.2 },
+    { name: "Tue", value: 8 },
+    { name: "Wed", value: 8.9 },
+    { name: "Thu", value: 7.1 },
+    { name: "Fri", value: 6.8 },
+    { name: "Sat", value: 7.5 },
   ],
 };
+
+function calculatePercentage() {
+  return 7.5;
+}
 
 export const chartBoxProduct = {
   color: "skyblue",
   icon: "/productIcon.svg",
   title: "Total Products",
-  number: "238",
+  signal: "238",
   dataKey: "products",
   percentage: 21,
   chartData: [
@@ -206,7 +153,7 @@ export const chartBoxRevenue = {
   color: "teal",
   icon: "/revenueIcon.svg",
   title: "Total Revenue",
-  number: "$56.432",
+  signal: "$56.432",
   dataKey: "revenue",
   percentage: -12,
   chartData: [
@@ -223,7 +170,7 @@ export const chartBoxConversion = {
   color: "gold",
   icon: "/conversionIcon.svg",
   title: "Total Ratio",
-  number: "2.6",
+  signal: "2.6",
   dataKey: "ratio",
   percentage: 12,
   chartData: [
@@ -554,8 +501,6 @@ export const products = [
     inStock: true,
   },
 ];
-
-
 
 export const singleUser = {
   id: 1,
