@@ -9,8 +9,9 @@ import {
   chartBoxConversion,
   chartBoxProduct,
   chartBoxRevenue,
-  phValue,
+  
 } from "../../data";
+import { phValue,nitrogen } from "../../chemicals";
 import "./home.scss";
 
 const Home = () => {
@@ -22,19 +23,24 @@ const Home = () => {
       </h1>
       </div>
       <div className="box box2">
-        <ChartBox {...phValue} />
+        <ChartBox
+          chartData={phValue}
+        
+        />
       </div>
       <div className="box box3">
-        <ChartBox {...chartBoxProduct} />
+        <ChartBox
+          chartData={nitrogen}
+        />
       </div>
       <div className="box box4">
         <PieChartBox />
       </div>
       <div className="box box5">
-        <ChartBox {...chartBoxConversion} />
+        {/* <ChartBox {...chartBoxConversion} /> */}
       </div>
       <div className="box box6">
-        <ChartBox {...chartBoxRevenue} />
+        {/* <ChartBox {...chartBoxRevenue} /> */}
       </div>
       <div className="box box7">
         <BigChartBox />
