@@ -180,4 +180,4 @@ const potassium: chemicals = {
   
   
 
-export { phValue, nitrogen, oxygen, potassium, avegereadings };
+export { phValue, nitrogen, oxygen, potassium,  };
