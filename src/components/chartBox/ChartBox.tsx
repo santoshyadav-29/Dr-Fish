@@ -1,7 +1,19 @@
 import "./chartBox.scss";
 import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts";
 
-const ChartBox = (props) => {
+
+type ChartBoxProps = {
+  chartData: {
+    title: string;
+    color: string;
+    key: string;
+    data: Array<{ name: string; value: number }>;
+  };
+
+    
+};
+
+const ChartBox = (props:ChartBoxProps) => {
   return (
     <div className="chartBox">
       <section className="txt">
@@ -13,7 +25,7 @@ const ChartBox = (props) => {
           <LineChart width={300} height={100} data={props.chartData.data}>
             <Line
               type="monotone"
-              dataKey="ph"
+              dataKey="value"
               stroke={props.chartData.color}
               strokeWidth={2}
             />

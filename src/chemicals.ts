@@ -1,73 +1,160 @@
-export const phValue = {
+type chemicals = {
+  title: string;
+  color: string;
+  key: string;
+  data: Array<{ name: string; value: number }>;
+};
+
+const phValue: chemicals = {
   title: "PH Value",
   color: "red",
+  key: "value",
   data: [
     {
       name: "Sunday",
-      ph: 7.1,
+      value: 7.1,
     },
     {
       name: "Monday",
 
-      ph: 8,
+      value: 8,
     },
     {
       name: "Tuesday",
 
-      ph: 5.5,
+      value: 5.5,
     },
     {
       name: "Wenesday",
-      ph: 9.5,
+      value: 9.5,
     },
     {
       name: "Thursday",
-      ph: 7.2,
+      value: 7.2,
     },
     {
       name: "Friday",
-      ph: 6.7,
+      value: 6.7,
     },
     {
       name: "Saturday",
-      ph: 7.4,
+      value: 7.4,
     },
   ],
 };
 
-export const nitrogen = {
+const nitrogen: chemicals = {
   title: "Nitrogen",
   color: "blue",
+  key: "n",
   data: [
     {
       name: "Sunday",
-      n: 7.1,
+      value: 7.1,
     },
     {
       name: "Monday",
 
-      n: 8,
+      value: 8,
     },
     {
       name: "Tuesday",
 
-      n: 5.5,
+      value: 5.5,
     },
     {
       name: "Wenesday",
-      n: 9.5,
+      value: 9.5,
     },
     {
       name: "Thursday",
-      n: 7.2,
+      value: 7.2,
     },
     {
       name: "Friday",
-      n: 6.7,
+      value: 6.7,
     },
     {
       name: "Saturday",
-      n: 7.4,
+      value: 7.4,
     },
   ],
 };
+
+const oxygen: chemicals = {
+  title: "Oxygen",
+  color: "green",
+  key: "o",
+  data: [
+    {
+      name: "Sunday",
+      value: 7.1,
+    },
+    {
+      name: "Monday",
+
+      value: 8,
+    },
+    {
+      name: "Tuesday",
+
+      value: 5.5,
+    },
+    {
+      name: "Wenesday",
+      value: 9.5,
+    },
+    {
+      name: "Thursday",
+      value: 7.2,
+    },
+    {
+      name: "Friday",
+      value: 6.7,
+    },
+    {
+      name: "Saturday",
+      value: 7.4,
+    },
+  ],
+};
+
+const potassium: chemicals = {
+  title: "Potassium",
+  color: "yellow",
+  key: "p",
+  data: [
+    {
+      name: "Sunday",
+      value: 7.1,
+    },
+    {
+      name: "Monday",
+
+      value: 8,
+    },
+    {
+      name: "Tuesday",
+
+      value: 5.5,
+    },
+    {
+      name: "Wenesday",
+      value: 9.5,
+    },
+    {
+      name: "Thursday",
+      value: 7.2,
+    },
+    {
+      name: "Friday",
+      value: 6.7,
+    },
+    {
+      name: "Saturday",
+      value: 7.4,
+    },
+  ],
+};
+
+export { phValue, nitrogen, oxygen, potassium };

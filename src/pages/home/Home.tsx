@@ -3,44 +3,30 @@ import BigChartBox from "../../components/bigChartBox/BigChartBox";
 import ChartBox from "../../components/chartBox/ChartBox";
 import PieChartBox from "../../components/pieCartBox/PieChartBox";
 
-import {
-  barChartBoxRevenue,
-  barChartBoxVisit,
-  chartBoxConversion,
-  chartBoxProduct,
-  chartBoxRevenue,
-  
-} from "../../data";
-import { phValue,nitrogen } from "../../chemicals";
+import { barChartBoxRevenue, barChartBoxVisit } from "../../data";
+import { phValue, nitrogen, oxygen, potassium } from "../../chemicals";
 import "./home.scss";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="box box1">
-        <h1>
-          this section is for temperature data
-      </h1>
+        <h1>this section is for temperature data</h1>
       </div>
       <div className="box box2">
-        <ChartBox
-          chartData={phValue}
-        
-        />
+        <ChartBox chartData={phValue} />
       </div>
       <div className="box box3">
-        <ChartBox
-          chartData={nitrogen}
-        />
+        <ChartBox chartData={nitrogen} />
       </div>
       <div className="box box4">
         <PieChartBox />
       </div>
       <div className="box box5">
-        {/* <ChartBox {...chartBoxConversion} /> */}
+        <ChartBox chartData={oxygen} />
       </div>
       <div className="box box6">
-        {/* <ChartBox {...chartBoxRevenue} /> */}
+        <ChartBox chartData={potassium} />
       </div>
       <div className="box box7">
         <BigChartBox />
