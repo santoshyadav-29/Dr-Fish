@@ -6,12 +6,16 @@ import PieChartBox from "../../components/pieCartBox/PieChartBox";
 import { barChartBoxRevenue, barChartBoxVisit } from "../../data";
 import { phValue, nitrogen, oxygen, potassium } from "../../chemicals";
 import "./home.scss";
+import Temperature from "../../components/temp/Temperature";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="box box1">
-        <h1>this section is for temperature data</h1>
+        <h1>
+          Temperature
+        </h1>
+        <Temperature />
       </div>
       <div className="box box2">
         <ChartBox chartData={phValue} />

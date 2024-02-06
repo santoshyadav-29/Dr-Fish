@@ -1,0 +1,26 @@
+.temperature-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+ 
+
+  color: white;
+
+  .temperature-value {
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(171, 0, 0);
+    text-align: center;
+  }
+
+  .temperature-info {
+    text-align: center;
+    color: yellow;
+  }
+
+  .temperature-reaction {
+   text-align: center;
+   font-size: 4rem;
+  }
+}
