@@ -8,6 +8,8 @@ import {
 } from "recharts";
 import "./bigChartBox.scss";
 
+import { avegereadings } from "../../chemicals";
+
 const data = [
   {
     name: "Sun",
@@ -80,7 +82,7 @@ const BigChartBox = () => {
             />
             <Area
               type="monotone"
-              dataKey="clothes"
+              dataKey={avegereadings.oxygen}
               stackId="1"
               stroke="#82ca9d"
               fill="#82ca9d"

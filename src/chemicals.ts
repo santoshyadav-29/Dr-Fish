@@ -126,35 +126,58 @@ const potassium: chemicals = {
   data: [
     {
       name: "Sunday",
-      value: 7.1,
+      value: 33,
     },
     {
       name: "Monday",
 
-      value: 8,
+      value: 39,
     },
     {
       name: "Tuesday",
 
-      value: 5.5,
+      value: 25,
     },
     {
       name: "Wenesday",
-      value: 9.5,
+      value: 42,
     },
     {
       name: "Thursday",
-      value: 7.2,
+      value: 25,
     },
     {
       name: "Friday",
-      value: 6.7,
+      value: 35,
     },
     {
       name: "Saturday",
-      value: 7.4,
+      value: 40,
     },
   ],
 };
 
-export { phValue, nitrogen, oxygen, potassium };
+
+
+
+//   phValue:
+//     phValue.data.reduce((acc, curr) => acc + curr.value, 0) /
+//     phValue.data.length,
+//   nitrogen:
+//     nitrogen.data.reduce((acc, curr) => acc + curr.value, 0) /
+//     nitrogen.data.length,
+//   oxygen:
+//     oxygen.data.reduce((acc, curr) => acc + curr.value, 0) / oxygen.data.length,
+//   potassium:
+//     potassium.data.reduce((acc, curr) => acc + curr.value, 0) /
+  //     potassium.data.length,
+  
+
+
+
+  
+
+  
+  
+
+export { phValue, nitrogen, oxygen, potassium, avegereadings };

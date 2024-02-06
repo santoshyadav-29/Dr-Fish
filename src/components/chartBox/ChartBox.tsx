@@ -1,7 +1,6 @@
 import "./chartBox.scss";
 import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts";
 
-
 type ChartBoxProps = {
   chartData: {
     title: string;
@@ -9,11 +8,9 @@ type ChartBoxProps = {
     key: string;
     data: Array<{ name: string; value: number }>;
   };
-
-    
 };
 
-const ChartBox = (props:ChartBoxProps) => {
+const ChartBox = (props: ChartBoxProps) => {
   return (
     <div className="chartBox">
       <section className="txt">
