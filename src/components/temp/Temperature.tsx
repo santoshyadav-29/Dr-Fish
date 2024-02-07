@@ -26,7 +26,7 @@ const Temperature = () => {
       </div>
 
       <div className="temperature-reaction">
-        {temperature > 20 ? "🐠🥹" : "🐠😊"}
+        {temperature > 20 ? "🐠🐟" : "🐠😊"}
       </div>
     </div>
   );
