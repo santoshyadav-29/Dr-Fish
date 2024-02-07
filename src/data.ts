@@ -23,13 +23,13 @@ export const menu = [
     listItems: [
       {
         id: 1,
-        title: "Users",
+        title: "Employee",
         url: "/users",
         icon: "user.svg",
       },
       {
         id: 2,
-        title: "Products",
+        title: "History",
         url: "/products",
         icon: "product.svg",
       },
