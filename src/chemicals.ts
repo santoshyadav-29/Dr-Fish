@@ -7,7 +7,7 @@ type chemicals = {
 
 const phValue: chemicals = {
   title: "PH Value",
-  color: "red",
+  color: "#8884d8",
   key: "value",
   data: [
     {
@@ -45,7 +45,7 @@ const phValue: chemicals = {
 
 const nitrogen: chemicals = {
   title: "Nitrogen",
-  color: "blue",
+  color: "skyblue",
   key: "n",
   data: [
     {
@@ -83,7 +83,7 @@ const nitrogen: chemicals = {
 
 const oxygen: chemicals = {
   title: "Oxygen",
-  color: "green",
+  color: "teal",
   key: "o",
   data: [
     {
@@ -121,7 +121,7 @@ const oxygen: chemicals = {
 
 const potassium: chemicals = {
   title: "Potassium",
-  color: "yellow",
+  color: "gold",
   key: "p",
   data: [
     {
