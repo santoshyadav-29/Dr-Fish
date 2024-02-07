@@ -14,7 +14,7 @@ const Temperature = () => {
   }, []);
 
   function generateRandomTemperature() {
-    return Math.floor(Math.random() * (5)) + 23;
+    return Math.floor(Math.random() * (2+1)) + 23;
   }
 
  
