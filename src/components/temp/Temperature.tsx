@@ -8,19 +8,16 @@ const Temperature = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setTemperature(generateRandomTemperature());
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   function generateRandomTemperature() {
-    return Math.floor(Math.random() * (30 - 10 + 1)) + 10;
+    return Math.floor(Math.random() * (5)) + 23;
   }
 
-  const temperatureData = [
-    { date: '2024-02-01', temperature },
-    // Add more data points as needed
-  ];
+ 
   return (
     <div className="temperature-wrapper">
       <h1 className="temperature-value">{temperature}°C</h1>

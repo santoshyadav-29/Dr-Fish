@@ -31,7 +31,7 @@ export const menu = [
         id: 2,
         title: "History",
         url: "/products",
-        icon: "product.svg",
+        icon: "history.svg",
       },
       {
         id: 3,
