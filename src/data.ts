@@ -558,27 +558,27 @@ export const singleUser = {
   },
   activities: [
     {
-      text: "John Doe purchased Playstation 5 Digital Edition",
+      text: "Water level below 20% in the tank",
       time: "3 day ago",
     },
     {
-      text: "John Doe added 3 items into their wishlist",
+      text: "temperature level is too high in the tank",
       time: "1 week ago",
     },
     {
-      text: "John Doe purchased Sony Bravia KD-32w800",
+      text: "oxygen level greater than 5mg/l in the tank, danger for trout",
       time: "2 weeks ago",
     },
     {
-      text: "John Doe reviewed a product",
+      text: "nitrogen level rapidly increasing. danger for fish health(algae bloom)",
       time: "1 month ago",
     },
     {
-      text: "John Doe added 1 items into their wishlist",
+      text: "[ph level is too high in the tank",
       time: "1 month ago",
     },
     {
-      text: "John Doe reviewed a product",
+      text: "oxygen level is too low in the tank, danger for fish health",
       time: "2 months ago",
     },
   ],

@@ -15,16 +15,11 @@ a {
 .main {
   font-family: "Inter", sans-serif;
   background-color: $main-bg;
- 
+
   color: $main-color;
 }
 
 .container {
-  
-min-height: 100vh;
-  
-  
-
   display: flex;
 }
 
@@ -33,7 +28,7 @@ min-height: 100vh;
   padding: 5px 20px;
   border-right: 2px solid $soft-bg;
 
-  @include lg{
+  @include lg {
     width: max-content;
   }
 }
