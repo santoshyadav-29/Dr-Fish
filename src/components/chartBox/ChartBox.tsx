@@ -15,7 +15,7 @@ const ChartBox = (props: ChartBoxProps) => {
     <div className="chartBox">
       <section className="txt">
         <h1>{props.chartData.title}</h1>
-        <p>{"11.2"}</p>
+        <p>{Math.floor(Math.random() * 10) + 5}</p>
       </section>
       <section className="graph">
         <ResponsiveContainer width="100%" height="100%">
